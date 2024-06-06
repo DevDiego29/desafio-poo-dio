@@ -18,8 +18,8 @@ public class Main {
         curso2.setCargaHoraria(8);
 
         Mentoria mentoria = new Mentoria();
-        mentoria.setTitulo("mentoria de Java");
-        mentoria.setDescricao("descrição mentoria java");
+        mentoria.setTitulo("Mentoria de Java");
+        mentoria.setDescricao("Descrição mentoria java");
         LocalDate localDate = null;
         mentoria.setData(localDate.now());
 
@@ -35,12 +35,12 @@ public class Main {
         bootcamp.getConteudos().add(mentoria);
 
         Dev devDiego = new Dev();
-        devDiego.setNome("Diego"); //instanciando o objeto e dando um nome
+        devDiego.setNome("Diego");
         devDiego.inscreverBootcamp(bootcamp);
         System.out.println("Conteudos inscritos de Diego: " + devDiego.getConteudosInscritos());
         devDiego.progredir();
         devDiego.progredir();
-        System.out.println("-");
+        System.out.println("--");
         System.out.println("Conteudos inscritos de Diego: " + devDiego.getConteudosInscritos());
         System.out.println("Conteudos concluídos de Diego: " + devDiego.getConteudosConcluidos());
         System.out.println("XP: " + devDiego.calcularTotalXp());
@@ -50,12 +50,12 @@ public class Main {
         Dev devAna = new Dev();
         devAna.setNome("Ana Paula");
         devAna.inscreverBootcamp(bootcamp);
-        System.out.println("Conteudos inscritos Ana: " + devAna.getConteudosInscritos());
+        System.out.println("Conteudos inscritos de Ana: " + devAna.getConteudosInscritos());
         devAna.progredir();
-        devDiego.progredir();
-        devDiego.progredir();
-        System.out.println("-");
-        System.out.println("Conteudos inscritos Ana: " + devAna.getConteudosInscritos());
+        devAna.progredir();
+        devAna.progredir();
+        System.out.println("--");
+        System.out.println("Conteudos inscritos de Ana: " + devAna.getConteudosInscritos());
         System.out.println("Conteudos concluidos de Ana: " + devAna.getConteudosConcluidos());
         System.out.println("XP: " + devAna.calcularTotalXp());
     }
